@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>shoot-game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui-container">
+        <a href="../index.html" id="back-btn">⬅ Menu</a>
+        <div>Score: <span id="score">0</span></div>
+        <div>Combo: x<span id="combo">1</span></div>
+        <div>Time: <span id="time">60</span></div>
+    </div>
+    <div id="overlay">
+        <h2 id="status-msg">GAME OVER</h2>
+        <p id="final-score"></p>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
