@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>block-game</title>
+    <title>Game Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="../index.html" id="back-btn">⬅ Menu</a>
-    <div class="game-container">
-       <div class="header">
-    <div class="score-box">
-        <div class="label">BEST SCORE</div>
-        <div id="best-score">0</div>
-    </div>
+    <div class="hub-container">
+        <header>
+            <h1>Game Training</h1>
+            <h2>For Amblyopia</h2>
+            <p>Select your game</p>
+        </header>
 
-    <div class="score-box">
-        <div class="label">NOW SCORE</div>
-        <div id="now-score">0</div>
-    </div>
-
-    <div class="score-box">
-        <div class="label">TIME</div>
-        <div id="time-left">10:00</div>
-    </div>
-</div>
-        <div id="grid-container"></div>
-        <div class="preview-section">
-            <div id="previews">
-                <div class="preview-slot" id="slot-0"></div>
-                <div class="preview-slot" id="slot-1"></div>
-                <div class="preview-slot" id="slot-2"></div>
+        <div class="game-grid" id="gameGrid">
+            <a href="catch-game/index.html" class="game-card">
+                <div class="game-title">Block Catch</div>
+            </a>
+            <a href="mole-game/index.html" class="game-card">
+                <div class="game-title">Mole hit</div>
+            </a>
+            <a href="pacman-game/index.html" class="game-card">
+                <div class="game-title">Pacman</div>
+            </a>
+            <a href="shoot-game/index.html" class="game-card">
+                <div class="game-title">Shooting</div>
+            </a>
+            <a href="block-game/index.html" class="game-card">
+                <div class="game-title">Blocking</div>
+            </a>
             </div>
-            <button id="reset-set-btn" onclick="manualReset()">RESET BLOCKS (-50)</button>
-        </div>
-    </div>
-    <div id="overlay">
-        <h2>GAME OVER</h2>
-        <button onclick="location.reload()">RETRY</button>
     </div>
     <script src="script.js"></script>
 </body>
